@@ -3,6 +3,10 @@
  ******************************************************************************/
 
 // Typography
+@use "variables";
+
+$black-color: variables.$black-color;
+$white-color: variables.$white-color;
 
 p,
 h1,

@@ -3,6 +3,25 @@
  ******************************************************************************/
 
 @use "sass:color";
+@use "variables";
+
+$white-color : variables.$white-color;
+$code-bg-color-dark: variables.$code-bg-color-dark;
+$code-bg-color-light: variables.$code-bg-color-light;
+$black-color: variables.$black-color;
+$grey-color: variables.$grey-color;
+$purple-color: variables.$purple-color;
+$grey-color-dark: variables.$grey-color-dark;
+$grey-color-light: variables.$grey-color-light;
+$red-color-dark: variables.$red-color-dark;
+$cyan-color: variables.$cyan-color;
+$grey-900: variables.$grey-900;
+
+$back-to-top-bottom: variables.$back-to-top-bottom;
+$back-to-top-right: variables.$back-to-top-right;
+$back-to-top-height: variables.$back-to-top-height;
+$back-to-top-width: variables.$back-to-top-width;
+$back-to-top-z-index: variables.$back-to-top-z-index;
 
 :root {
   color-scheme: light;
