@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://lab-web-test.github.io/sitemap.xml
+Sitemap: https://rafisudrajat.github.io/sitemap.xml
