@@ -18,7 +18,9 @@ announcements:
 {% include bib_search.liquid %}
 
 <!-- News -->
+
 {% if page.announcements and page.announcements.enabled %}
+
   <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
   </h2>

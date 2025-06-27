@@ -12,8 +12,11 @@ not_show: true
 > -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
 
 ## Books that I am reading, have read, or will read
+
 {% if page.not_show %}
+
   <script>
     window.location.href = "/404.html";
   </script>
+
 {% endif %}

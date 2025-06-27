@@ -62,7 +62,9 @@ not_show: true
 {% endif %}
 
 <!-- News -->
+
 {% if page.announcements and page.announcements.enabled %}
+
   <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
   </h2>

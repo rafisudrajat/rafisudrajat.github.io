@@ -2,7 +2,7 @@
 layout: page
 permalink: /contact/
 title: contact
-description: 
+description:
 nav: true
 nav_order: 6
 announcements:
@@ -12,7 +12,9 @@ announcements:
 ---
 
 <!-- News -->
+
 {% if page.announcements and page.announcements.enabled %}
+
 <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
 </h2>

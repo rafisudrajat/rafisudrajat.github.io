@@ -13,8 +13,11 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 not_show: true
 ---
+
 <!-- News -->
+
 {% if page.announcements and page.announcements.enabled %}
+
   <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
   </h2>
