@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false
 nav_order: 1
 pagination:
   enabled: true
@@ -18,6 +18,7 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
+not_show: true
 ---
 
 <div class="post">
@@ -61,7 +62,9 @@ announcements:
 {% endif %}
 
 <!-- News -->
+
 {% if page.announcements and page.announcements.enabled %}
+
   <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
   </h2>
@@ -206,3 +209,8 @@ announcements:
 {% endif %}
 
 </div>
+{% if page.not_show %}
+  <script>
+    window.location.href = "/404.html";
+  </script>
+{% endif %}
