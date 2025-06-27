@@ -1,17 +1,16 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
+title: research
+permalink: /research/
 description: A growing collection of your cool projects.
 nav: true
-nav_order: 3
+nav_order: 1
 display_categories: [work, fun]
 horizontal: false
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-not_show: true
 ---
 <!-- News -->
 {% if page.announcements and page.announcements.enabled %}
@@ -75,8 +74,3 @@ not_show: true
   {% endif %}
 {% endif %}
 </div>
-{% if page.not_show %}
-  <script>
-    window.location.href = "/404.html";
-  </script>
-{% endif %}

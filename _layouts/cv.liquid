@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% if page.not_show %}
+  <script>
+    window.location.href = "/404.html";
+  </script>
+{% endif %}
+
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">

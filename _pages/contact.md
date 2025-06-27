@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /contact/
+title: contact
+description: 
 nav: true
 nav_order: 6
 announcements:
@@ -11,14 +11,16 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
 <!-- News -->
-
 {% if page.announcements and page.announcements.enabled %}
 <h2>
     <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
 </h2>
 {% include news.liquid limit=true %}
 {% endif %}
+
+## Contact us below:
+
+<i class="ti ti-mail"></i> email: emaillab@blablabla.com
+
+<i class="ti ti-phone"></i> phone: +62 999910010101992

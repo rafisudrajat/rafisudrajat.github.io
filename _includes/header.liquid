@@ -148,3 +148,11 @@
     </progress>
   {% endif %}
 </header>
+
+{% comment %} FOR DEBUGGING PURPOSE ONLY {% endcomment %}
+{% comment %} <h1>Site Pages</h1>
+<ul>
+  {% for p in sorted_pages %}
+    <li>path:{{ p.path }} <-> url:{{ p.url }} <-> nav:{{p.nav}} <-> autogen:{{p.autogen}} <-> child:{{p.children}}</li>
+  {% endfor %}
+</ul> {% endcomment %}
