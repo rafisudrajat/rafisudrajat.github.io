@@ -23,6 +23,6 @@ announcements:
 
 ## Contact us below:
 
-<i class="ti ti-mail"></i> email: emaillab@blablabla.com
+<i class="ti ti-mail"></i> email: rdllab@anu.edu.au
 
-<i class="ti ti-phone"></i> phone: +62 999910010101992
+<i class="ti ti-phone"></i> phone: +61 (02) 612 51577
