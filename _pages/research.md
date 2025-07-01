@@ -28,14 +28,18 @@ announcements:
 
 <!-- Video demo -->
 <h2>Examples of our works:</h2>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kHgLxKiNYmE" allowfullscreen>
-  </iframe>
-</div>
-<br/>
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dyPHeD5qiB8" allowfullscreen>
-  </iframe>
+<div class="video-wrapper" style="max-width: 600px; margin: auto;">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kHgLxKiNYmE" allowfullscreen>
+    </iframe>
+  </div>
+  
+  <br/>
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dyPHeD5qiB8" allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <br/><br/>
