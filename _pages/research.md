@@ -2,16 +2,17 @@
 layout: page
 title: research
 permalink: /research/
-description: A growing collection of your cool projects.
+description: We focus on the design and development of algorithms to enable robust decision theory becomes practical computational tools for robotics and related domain. Such computational tools will enable robots to design their own strategies, such as deciding what data to use, how to gather the data, and how to adaptively improve its strategies, so as to accomplish various tasks well, despite various modelling errors and types of uncertainty, and despite limited to no information about the system and its operating environment.
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [active, finished]
 horizontal: false
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
+<link rel="stylesheet" href="{{ '/assets/css/custom_css/research_page.css' | relative_url | bust_css_cache }}">
 
 <!-- News -->
 
@@ -23,7 +24,23 @@ announcements:
   {% include news.liquid limit=true %}
 {% endif %}
 
-<!-- pages/projects.md -->
+<br/><br/>
+
+<!-- Video demo -->
+<h2>Examples of our works:</h2>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kHgLxKiNYmE" allowfullscreen>
+  </iframe>
+</div>
+<br/>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dyPHeD5qiB8" allowfullscreen>
+  </iframe>
+</div>
+
+<br/><br/>
+
+<!-- pages/research.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
