@@ -8,6 +8,14 @@
 $black-color: variables.$black-color;
 $white-color: variables.$white-color;
 
+html[data-theme="dark"] {
+  --text-color: #{variables.$cyan-color};
+}
+
+html[data-theme="light"] {
+  --text-color: #{variables.$red-color-dark};
+}
+
 p,
 h1,
 h2,
@@ -718,7 +726,7 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: variables.$cyan-color;
+    color: var(--text-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
