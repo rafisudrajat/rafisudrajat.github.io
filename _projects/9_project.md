@@ -5,6 +5,7 @@ description: another project with an image 🎉
 img: assets/img/6.jpg
 importance: 4
 category: fun
+not_show: true
 ---
 
 Every project has a beautiful feature showcase page.
@@ -78,3 +79,9 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+{% if page.not_show %}
+  <script>
+    window.location.href = "/404.html";
+  </script>
+{% endif %}

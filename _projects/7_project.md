@@ -6,6 +6,7 @@ img: assets/img/4.jpg
 importance: 1
 category: work
 related_publications: true
+not_show: true
 ---
 
 Every project has a beautiful feature showcase page.
@@ -79,3 +80,9 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+{% if page.not_show %}
+  <script>
+    window.location.href = "/404.html";
+  </script>
+{% endif %}
