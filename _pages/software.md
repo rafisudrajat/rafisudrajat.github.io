@@ -2,7 +2,7 @@
 layout: page
 permalink: /software/
 title: software
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: 'Checkout our organization repository: https://github.com/RDLLab'
 nav: true
 nav_order: 2
 announcements:
