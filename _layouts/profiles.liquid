@@ -18,42 +18,71 @@ layout: page
           <br>
           <h2>{{position | capitalize}}</h2>
           
-          {% for profile in members_group_by_position %}
-            <hr>
-            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; 
-              {% if profile.align == 'right' %}
-                flex-direction: row-reverse;
-              {% else %}
-                flex-direction: row;
-              {% endif %}
-            ">
-
-              <div class="profile" style="margin: 0 20px;">
-                {% if profile.image %}
-                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                  {% if profile.image_circular %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                  {% else %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                  {% endif %}
-                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-                {% endif %}
-                {% if profile.more_info %}
-                  <div class="more-info">{{ profile.more_info }}</div>
-                {% endif %}
-              </div>
-
-              <div style="flex: 1; min-width: 250px;">
-                {% if profile.content %}
-                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                  {{ profile_content | markdownify }}
+          {% unless position contains "alumni" %}
+            {% for profile in members_group_by_position %}
+              <hr>
+              <div style="display: flex; flex-wrap: wrap; align-items: flex-start; 
+                {% if profile.align == 'right' %}
+                  flex-direction: row-reverse;
                 {% else %}
-                  {{ content }}
+                  flex-direction: row;
                 {% endif %}
+              ">
+  
+                <div class="profile" style="margin: 0 20px;">
+                  {% if profile.image %}
+                    {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                    {% if profile.image_circular %}
+                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                    {% else %}
+                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                    {% endif %}
+                    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+                    {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                  {% endif %}
+                  {% if profile.more_info %}
+                    <div class="more-info">{{ profile.more_info }}</div>
+                  {% endif %}
+                </div>
+  
+                <div style="flex: 1; min-width: 250px;">
+                  {% if profile.content %}
+                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                    {{ profile_content | markdownify }}
+                  {% else %}
+                    {{ content }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          {% endunless %}
+          
+          {% if position contains "alumni" %}
+          {% comment %} FOR ALUMNI {% endcomment %}
+            <div class="container">
+              <div class="row">
+                {% for profile in members_group_by_position %}
+                  <div class="col-12 col-sm-6 col-md-4 text-center mb-4">
+                    {% if profile.image %}
+                      {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                      {% if profile.image_circular %}
+                        {% assign profile_image_class = 'img-fluid rounded-circle' %}
+                      {% else %}
+                        {% assign profile_image_class = 'img-fluid rounded' %}
+                      {% endif %}
+                      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+                      {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                    {% endif %}
+                    <h3>{{ profile.name }}</h3>
+                    {% if profile.more_info %}
+                      <div class="more-info mt-2">{{ profile.more_info }}</div>
+                    {% endif %}
+                  </div>
+                {% endfor %}
               </div>
             </div>
-          {% endfor %}
+          {% endif %}
+
 
       {% endfor %}
     {% endif %}
