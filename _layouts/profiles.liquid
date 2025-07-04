@@ -4,7 +4,7 @@ layout: page
 <!-- News -->
 {% if page.announcements and page.announcements.enabled %}
   <h2>
-    <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+    <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
   </h2>
   {% include news.liquid limit=true %}
 {% endif %}
@@ -16,7 +16,7 @@ layout: page
       {% for position in page.position_list %}
           {% assign members_group_by_position = page.profiles | where: "position", position %}          
           <br>
-          <h2>{{position | capitalize}}</h2>
+          <h2>{{position}}</h2>
           
           {% unless position contains "alumni" %}
             {% for profile in members_group_by_position %}

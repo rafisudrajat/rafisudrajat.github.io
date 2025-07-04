@@ -5,7 +5,7 @@ title: people
 description: members of the lab
 nav: true
 nav_order: 3
-position_list: [staff,student,staff alumni, HDR alumni] #Make sure this is not empty
+position_list: [Staff, Student, Staff alumni, HDR alumni] #Make sure this is not empty
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
@@ -15,7 +15,7 @@ profiles:
   - align: right
     image: people/active_members/hannaK.jpg
     content: people_contents/hanna.md
-    position: staff
+    position: Staff
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>Principal Investigator</p><br>
@@ -24,7 +24,7 @@ profiles:
   - align: right
     image: people/active_members/yongboC.jpg
     content: people_contents/yongboC.md
-    position: staff
+    position: Staff
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>Research Fellow</p><br>
@@ -33,7 +33,7 @@ profiles:
   - align: right
     image: people/active_members/edwardK.jpg
     content: people_contents/edwardK.md
-    position: staff
+    position: Staff
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>Research Fellow</p><br>
@@ -44,7 +44,7 @@ profiles:
   - align: left
     image: people/active_members/nickC.jpg
     content:  people_contents/nickC.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -53,7 +53,7 @@ profiles:
   - align: left
     image: people/active_members/jonathonS.jpg
     content:  people_contents/jonathonS.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -62,7 +62,7 @@ profiles:
   - align: left
     image: people/active_members/ivanA.jpg
     content:  people_contents/ivanA.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -71,7 +71,7 @@ profiles:
   - align: left
     image: people/active_members/yohanK.jpg
     content:  people_contents/yohanK.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -80,7 +80,7 @@ profiles:
   - align: left
     image: people/active_members/rhysN.jpg
     content:  people_contents/rhysN.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -89,7 +89,7 @@ profiles:
   - align: left
     image: people/active_members/empty.jpg
     content:  people_contents/jingyangY.md
-    position: student
+    position: Student
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>PhD candidate</p><br>
@@ -99,7 +99,7 @@ profiles:
   # Staff Alumni
   - name: Jimy Cai Huang 
     image: people/alumni/empty.jpg
-    position: staff alumni
+    position: Staff alumni
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>position: Research Engineer<br>
@@ -108,7 +108,7 @@ profiles:
       current: Travelling</p>
   - name: Ian Mallett
     image: people/alumni/empty.jpg
-    position: staff alumni
+    position: Staff alumni
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>position: Research Engineer<br>
@@ -117,7 +117,7 @@ profiles:
       current: Software Engineer, Deloitte Australia</p>
   - name: Jonathan Ferrer
     image: people/alumni/empty.jpg
-    position: staff alumni
+    position: Staff alumni
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>position: Postdoctoral Associate<br>
@@ -126,7 +126,7 @@ profiles:
       current: Postdoctoral Fellow at CSIRO</p>
   - name: Konstantin Seiler
     image: people/alumni/empty.jpg
-    position: staff alumni
+    position: Staff alumni
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>position: Research Fellow<br>
