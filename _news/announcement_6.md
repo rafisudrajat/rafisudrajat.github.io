@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Yuanchu Liang's paper (from his 3rd year project) has been accepted to IROS 2023! Congrats, Yuanchu! [Paper here](papers/iros23-recurrent.pdf).
+Yuanchu Liang's paper (from his 3rd year project) has been accepted to IROS 2023! Congrats, Yuanchu! <a href="{{ 'iros23-recurrent.pdf' | prepend: 'assets/pdf/papers/' | relative_url}}">Paper here</a>.

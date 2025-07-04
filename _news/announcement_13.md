@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Congrats to Nick Collins for winning the Alberto Elfes Best Paper Award at ACRA'20! [Paper here](papers/acra20_partially.pdf).
+Congrats to Nick Collins for winning the Alberto Elfes Best Paper Award at ACRA'20! <a href="{{ 'acra20_partially.pdf' | prepend: 'assets/pdf/papers/' | relative_url}}">Paper here</a>

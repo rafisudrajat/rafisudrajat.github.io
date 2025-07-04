@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Jonathon Schwartz paper has been accepted to AAMAS 2023! Congrats, Jonathon! [Paper here](papers/AAMAS-BAPOSGMCP.pdf).
+Jonathon Schwartz paper has been accepted to AAMAS 2023! Congrats, Jonathon! <a href="{{ 'AAMAS-BAPOSGMCP.pdf' | prepend: 'assets/pdf/papers/' | relative_url}}">Paper here</a>
