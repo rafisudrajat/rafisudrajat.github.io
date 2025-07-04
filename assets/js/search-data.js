@@ -419,18 +419,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/backup/announcement_2_backup/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-congrats-to-joshua-song-for-his-mphil-conferral-amp-amp-new-job-at-clarivate",
+            },},{id: "news-congrats-to-joshua-song-for-his-mphil-conferral-amp-amp-new-job-at-clarivate",
           title: 'Congrats to Joshua Song for his MPhil conferral &amp;amp;amp; new job at Clarivate!...',
           description: "",
           section: "News",},{id: "news-congrats-to-marcus-hoerger-for-his-phd-conferral",
