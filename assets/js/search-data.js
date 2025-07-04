@@ -95,7 +95,7 @@ ninja.data = [{
           title: 'We are excited to be part of the soon to be launched ARC...',
           description: "",
           section: "News",},{id: "news-jonathon-schwartz-paper-has-been-accepted-to-aamas-2023-congrats-jonathon-paper-here",
-          title: 'Jonathon Schwartz paper has been accepted to AAMAS 2023! Congrats, Jonathon! Paper here....',
+          title: 'Jonathon Schwartz paper has been accepted to AAMAS 2023! Congrats, Jonathon! Paper here...',
           description: "",
           section: "News",},{id: "news-congrats-to-hanna-kurniawati-for-her-appointment-as-the-smartsat-crc-professorial-chair-for-system-autonomy-intelligence-and-decision-making-read-more",
           title: 'Congrats to Hanna Kurniawati for her appointment as the SmartSat CRC Professorial Chair...',
