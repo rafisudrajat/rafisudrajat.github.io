@@ -52,9 +52,9 @@ Multilevel Monte-Carlo applied to POMDP planning
 
 {% include figure.liquid loading="eager" path="assets/img/project_img/complex_dynamics/fig2.png" title="example scenario for POMDP evaluation" class="img-fluid rounded z-depth-1" %}
 
-<h2>
+<div class="caption">
 Test scenarios used to evaluate MLPP
-</h2> 
+</div> 
 
 <p class="text-justify">
 Inspired by our second key insight, we developed a new on-line POMDP solver called Multilevel POMDP Planner (MLPP). MLPP combines the commonly used Monte-Carlo-Tree-Search with a recent concept in Monte-Carlo, called Multilevel Monte-Carlo (MLMC). MLMC is a variance reduction technique that uses cheap and coarse approximations to the system to carry out the majority of the simulations, and combines them with a small number of accurate but expensive simulations to maintain correctness. By constructing a set of correlated samples from a sequence of approximations to the original system’s dynamics, in conjunction with applying Multilevel Monte-Carlo estimation to compute the expected value of sequences of actions, MLPP can compute near-optimal policies substantially faster (up to 10x) than some of today's fastest on-line solvers on four challenging robot motion planning under uncertainty problems. Details of the results are available <a target="_blank" href="/assets/pdf/papers/isrr19_mlmc.pdf" >here</a>.
