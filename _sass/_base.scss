@@ -7,13 +7,23 @@
 
 $black-color: variables.$black-color;
 $white-color: variables.$white-color;
+:root {
+  --navbar-bg-color: #{rgb(29, 29, 29)};
+  --navbar-text-color: #{$white-color};
+  --navbar-toggler-color: #{$white-color};
+}
 
 html[data-theme="dark"] {
   --text-color: #{variables.$cyan-color};
+  --navbar-text-color: #{--global-text-color};
+  --navbar-toggler-color: #{--global-text-color};
 }
 
 html[data-theme="light"] {
   --text-color: #{variables.$red-color-dark};
+  --navbar-text-color: #{$white-color};
+  --navbar-bg-color: #{rgb(29, 29, 29)};
+  --navbar-toggler-color: #{$white-color};
 }
 
 p,
@@ -289,6 +299,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar.navbar-light {
+  background-color: var(--navbar-bg-color);
   a {
     &:hover {
       text-decoration: none;
@@ -300,7 +311,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--navbar-text-color);
 
     &:hover {
       color: var(--global-hover-color);
@@ -360,7 +371,7 @@ ul.task-list input[type="checkbox"] {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color);
+    background-color: var(--navbar-toggler-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
