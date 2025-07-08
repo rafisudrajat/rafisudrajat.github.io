@@ -12,89 +12,98 @@ profiles:
   # and create one content file for each profile inside _pages/
   
   # Staff
-  - align: right
+  - name: Hanna Kurniawati
     image: people/active_members/hannaK.jpg
-    content: people_contents/hanna.md
     position: Staff
     image_circular: true # crops the image to make it circular
+    personal_web: https://users.cecs.anu.edu.au/~hannakur/
+    email: Hanna.Kurniawati@anu.edu.au
     more_info: >
-      <p>Principal Investigator</p><br>
-      <p>School of Computing</p><br>
-      <p>Australian National University</p>
-  - align: right
+      <p>Principal Investigator<br>
+      School of Computing<br>
+      Australian National University</p>
+  - name: Yongbo Chen
     image: people/active_members/yongboC.jpg
-    content: people_contents/yongboC.md
     position: Staff
     image_circular: true # crops the image to make it circular
+    personal_web:
+    email: Yongbo.Chen@anu.edu.au
     more_info: >
-      <p>Research Fellow</p><br>
-      <p>School of Computing</p><br>
-      <p>Australian National University</p>
-  - align: right
+      <p>Research Fellow<br>
+      School of Computing<br>
+      Australian National University</p>
+  - name: Edward Kim
     image: people/active_members/edwardK.jpg
-    content: people_contents/edwardK.md
     position: Staff
+    personal_web: https://comp.anu.edu.au/people/edward-kim/
+    email: Edward.Kim@anu.edu.au
     image_circular: true # crops the image to make it circular
     more_info: >
-      <p>Research Fellow</p><br>
-      <p>School of Computing</p><br>
-      <p>Australian National University</p>
+      <p>Research Fellow<br>
+      School of Computing<br>
+      Australian National University</p>
   
   # HDR
-  - align: left
+  - name: Nicholas Collins
     image: people/active_members/nickC.jpg
-    content:  people_contents/nickC.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web:
+    email: Nicholas.Collins@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>School of ITEE, UQ</p><br>
-      <p>2018-now</p>
-  - align: left
+      <p>PhD candidate<br>
+      School of ITEE, UQ<br>
+      2018-now</p>
+  - name: Jonathon Schwartz
     image: people/active_members/jonathonS.jpg
-    content:  people_contents/jonathonS.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web: https://comp.anu.edu.au/people/jonathon-schwartz/
+    email: Jonathon.Schwartz@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>School of Computing, ANU</p><br>
-      <p>2020-now</p>
-  - align: left
+      <p>PhD candidate<br>
+      School of Computing, ANU<br>
+      2020-now</p>
+  - name: Ivan Ang
     image: people/active_members/ivanA.jpg
-    content:  people_contents/ivanA.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web: https://comp.anu.edu.au/people/ivan-ang/
+    email: Ivan.Ang@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>School of Computing, ANU</p><br>
-      <p>2021-now</p>
-  - align: left
+      <p>PhD candidate<br>
+      School of Computing, ANU<br>
+      2021-now</p>
+  - name: Yohan Karunanayake
     image: people/active_members/yohanK.jpg
-    content:  people_contents/yohanK.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web: https://comp.anu.edu.au/people/yohan-karunanayake/
+    email: Yohan.Karunanayake@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>School of Computing, ANU</p><br>
-      <p>2022-now</p>
-  - align: left
+      <p>PhD candidate<br>
+      School of Computing, ANU<br>
+      2022-now</p>
+  - name: Rhys Newbury
     image: people/active_members/rhysN.jpg
-    content:  people_contents/rhysN.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web: https://rhys-newbury.github.io/
+    email: Rhys.Newbury@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>Monash Robotics</p><br>
-      <p>2022-now</p>
-  - align: left
+      <p>PhD candidate<br>
+      Monash Robotics<br>
+      2022-now</p>
+  - name: Jingyang You
     image: people/active_members/empty.jpg
-    content:  people_contents/jingyangY.md
     position: Student
     image_circular: false # crops the image to make it circular
+    personal_web: 
+    email: Jingyang.You@anu.edu.au
     more_info: >
-      <p>PhD candidate</p><br>
-      <p>School of Computing, ANU</p><br>
-      <p>2023-now</p>
+      <p>PhD candidate<br>
+      School of Computing, ANU<br>
+      2023-now</p>
   
   # Staff Alumni
   - name: Jimy Cai Huang 

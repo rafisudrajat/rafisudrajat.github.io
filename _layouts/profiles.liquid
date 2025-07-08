@@ -18,71 +18,42 @@ layout: page
           <br>
           <h2>{{position}}</h2>
           
-          {% unless position contains "alumni" %}
-            {% for profile in members_group_by_position %}
-              <hr>
-              <div style="display: flex; flex-wrap: wrap; align-items: flex-start; 
-                {% if profile.align == 'right' %}
-                  flex-direction: row-reverse;
-                {% else %}
-                  flex-direction: row;
-                {% endif %}
-              ">
-  
-                <div class="profile" style="margin: 0 20px;">
+          <!-- Member card -->
+          <div class="container">
+            <div class="row">
+              {% for profile in members_group_by_position %}
+                <div class="col-12 col-sm-6 col-md-4 text-center mb-4">
                   {% if profile.image %}
                     {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
                     {% if profile.image_circular %}
-                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                      {% assign profile_image_class = 'img-fluid rounded-circle' %}
                     {% else %}
-                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                      {% assign profile_image_class = 'img-fluid rounded' %}
                     {% endif %}
                     {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
                     {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
                   {% endif %}
+                  <h3>{{ profile.name }}</h3>
                   {% if profile.more_info %}
-                    <div class="more-info">{{ profile.more_info }}</div>
+                    <div class="more-info mt-2">{{ profile.more_info }}</div>
                   {% endif %}
-                </div>
-  
-                <div style="flex: 1; min-width: 250px;">
-                  {% if profile.content %}
-                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                    {{ profile_content | markdownify }}
-                  {% else %}
-                    {{ content }}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          {% endunless %}
-          
-          {% if position contains "alumni" %}
-          {% comment %} FOR ALUMNI {% endcomment %}
-            <div class="container">
-              <div class="row">
-                {% for profile in members_group_by_position %}
-                  <div class="col-12 col-sm-6 col-md-4 text-center mb-4">
-                    {% if profile.image %}
-                      {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                      {% if profile.image_circular %}
-                        {% assign profile_image_class = 'img-fluid rounded-circle' %}
-                      {% else %}
-                        {% assign profile_image_class = 'img-fluid rounded' %}
-                      {% endif %}
-                      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-                      {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                  
+                  <div class="d-flex justify-content-center">
+                    {% if profile.personal_web %}
+                      <a href="{{ profile.personal_web }}" title="Personal Website" style="margin: 0px 5px">
+                        <i class="fa-solid fa-address-card" style="font-size: 35px;"></i>                      
+                      </a> 
                     {% endif %}
-                    <h3>{{ profile.name }}</h3>
-                    {% if profile.more_info %}
-                      <div class="more-info mt-2">{{ profile.more_info }}</div>
+                    {% if profile.email %}
+                      <a href="mailto:{{ profile.email }}" title="Email" style="margin: 0px 5px">
+                        <i class="fa-solid fa-envelope" style="font-size: 35px;"></i>
+                      </a>
                     {% endif %}
                   </div>
-                {% endfor %}
-              </div>
+                </div>
+              {% endfor %}
             </div>
-          {% endif %}
-
+          </div>
 
       {% endfor %}
     {% endif %}
