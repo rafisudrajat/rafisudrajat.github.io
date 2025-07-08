@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the lab
+description: Members of the lab
 nav: true
 nav_order: 3
 position_list: [Staff, Student, Staff alumni, HDR alumni] #Make sure this is not empty
@@ -181,7 +181,7 @@ profiles:
       graduation year: 2014<br>
       current: Robotics System Engineer at Facebook</p>
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---

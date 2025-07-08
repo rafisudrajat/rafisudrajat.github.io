@@ -8,7 +8,7 @@ nav_order: 1
 display_categories: [active, finished]
 horizontal: false
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
@@ -23,8 +23,6 @@ announcements:
   </h2>
   {% include news.liquid limit=true %}
 {% endif %}
-
-<br/><br/>
 
 <!-- Video demo -->
 <h2>Examples of our works:</h2>
@@ -42,8 +40,6 @@ announcements:
     </div>
   </div>
 </div>
-
-<br/><br/>
 
 <!-- pages/research.md -->
 <div class="projects">
