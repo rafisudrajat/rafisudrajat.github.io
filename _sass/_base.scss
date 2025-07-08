@@ -1210,6 +1210,11 @@ ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
 
+// News
+.table.news-table{
+  color: var(--global-text-color);
+}
+
 // newsletter
 .newsletter-form-container {
   margin-bottom: 20px;
