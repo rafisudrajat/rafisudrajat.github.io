@@ -7,6 +7,11 @@
 
 $black-color: variables.$black-color;
 $white-color: variables.$white-color;
+:root {
+  --navbar-bg-color: #{rgb(29, 29, 29)};
+  --navbar-text-color: #{$white-color};
+  --navbar-toggler-color: #{$white-color};
+}
 
 html[data-theme="dark"] {
   --text-color: #{variables.$cyan-color};
