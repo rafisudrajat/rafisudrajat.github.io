@@ -205,4 +205,11 @@ ninja.data = [{
         handler: () => {
           window.open("https://github.com/RDLLab", "_blank");
         },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.anu.edu.au/", "_blank");
+        },
       },];
