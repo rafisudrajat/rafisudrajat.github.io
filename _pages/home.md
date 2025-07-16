@@ -2,6 +2,7 @@
 layout: about
 title: home
 permalink: /
+show_title: false
 subtitle: School of Computing, Australian National University
 
 profile:

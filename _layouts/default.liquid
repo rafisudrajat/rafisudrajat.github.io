@@ -19,6 +19,20 @@
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
     {% include header.liquid %}
+    {% if page.permalink == '/' %}
+      <!-- Background -->
+      <div style="background: url('/assets/img/background_home.jpg') no-repeat center center; background-size: cover; padding: 60px 20px; text-align: center;">
+        <!-- Logo -->
+        <img src="/assets/img/rdl_logo.png" alt="Logo" style="height: 80px; display: block; margin: 0 auto 10px auto;">
+
+        <!-- Main title -->
+        <h1 style="color: white; font-weight: 500;">Robust Decision-making & Learning Lab</h1>
+
+        <!-- Subtitles -->
+        <h2 style="color: white; font-weight: 400;">School of Computing</h2>
+        <h2 style="color: white; font-weight: 400;">Australian National University</h2>
+      </div>
+    {% endif %}
 
     <!-- Content -->
     <div class="container mt-5" role="main">
