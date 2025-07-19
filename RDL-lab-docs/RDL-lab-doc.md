@@ -78,7 +78,54 @@ Go to [people.md](/_pages/people.md) and edit the properties.
 
 ## Setup content in publication page
 
-Go to [papers.bib](/_bibliography/papers.bib) and edit list of publications that you want to show.
+Go to [papers.bib](/_bibliography/papers.bib) and edit list of publications that you want to show. The list of reference will be rendered by [jekyll scholar](https://github.com/inukshuk/jekyll-scholar)
+
+### 📄 BibTeX Fields Explained for Jekyll Scholar
+
+The following table explains each BibTeX field you can use in your `.bib` file when managing references with Jekyll Scholar.
+
+| **Field**        | **Description**                                                                 | **Example Value**                        |
+|------------------|---------------------------------------------------------------------------------|------------------------------------------|
+| `author`         | List of authors                                                                 | `Z. Sun and D. Hsu`                      |
+| `title`          | Title of the work                                                               | `Narrow Passage Sampling...`             |
+| `journal`        | Journal name (for `@article` entries)                                           | `IEEE Trans. on Robotics`                |
+| `booktitle`      | Title of book or conference proceedings (used in `@inproceedings`)              | `Proc. IEEE ICRA`                        |
+| `year`           | Year of publication                                                             | `2005`                                   |
+| `month`          | Month of publication                                                            | `December`                               |
+| `volume`         | Journal volume                                                                  | `21`                                     |
+| `number`         | Journal issue number                                                            | `6`                                      |
+| `pages`          | Page range                                                                      | `1105--1115`                             |
+| `publisher`      | Name of publisher (used in `@book`, `@incollection`, etc.)                      | `Springer`                               |
+| `address`        | Address of publisher                                                            | `Berlin, Germany`                        |
+| `editor`         | Name(s) of editor(s)                                                            | `J. Doe`                                 |
+| `school`         | University/institution for theses                                               | `MIT`                                    |
+| `institution`    | Institution for technical reports                                               | `Stanford Research Institute`            |
+| `doi`            | Digital Object Identifier                                                       | `10.1109/TRO.2005.863932`                |
+| `url`            | URL to the publication                                                          | `https://example.com/paper.pdf`          |
+| `pdf`            | Path to a local PDF file                                                        | `papers/tro05_bt.pdf`                    |
+| `note`           | Any additional note (e.g., “To appear”)                                         | `To appear in ICRA 2025`                 |
+| `keywords`       | Keywords for filtering or styling                                               | `robotics, planning`                     |
+| `abstract`       | Abstract or summary of the paper                                                | `This paper proposes...`                 |
+| `bibtex_show`    | Custom field to control BibTeX display (not used by default)                    | `true`                                   |
+| `type`           | Entry type (e.g., `@article`, `@book`)                                          | `@article`                               |
+| `id`             | Citation key used to cite the reference                                         | `Sun05:Narrow`                           |
+
+Note: if you want to add the pdf file to be shown, you can upload the pdf file to our github repository, and place it in the [/assets/pdf/papers/](/assets/pdf/papers/) directory then input the relative path to the `pdf` property inside the [papers.bib](/_bibliography/papers.bib) file. Or if you have uploaded a paper online, you can put the link tot he `pdf` property instead.
+
+For example, this reference below means that the location of the paper is uploaded in [/assets/pdf/papers/wafr06_wco.pdf](/assets/pdf/papers/wafr06_wco.pdf)
+
+```bib
+@INCOLLECTION{Kur06:On,
+  AUTHOR = {H. Kurniawati and D. Hsu},
+  TITLE = "Workspace-based Connectivity Oracle: An Adaptive Sampling Strategy for PRM Planning",
+  BOOKTITLE = {Algorithmic Foundations of Robotics VII},
+  PUBLISHER = {Springer--Verlag},
+  EDITOR = {S. Akella and et.al.},
+  YEAR = {2006},
+  pdf = {papers/wafr06_wco.pdf},
+  bibtex_show={true},
+}
+```
 
 ## Setup content in news page
 
