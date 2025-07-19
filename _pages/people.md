@@ -22,16 +22,6 @@ profiles:
       <p>Principal Investigator<br>
       School of Computing<br>
       Australian National University</p>
-  - name: Yongbo Chen
-    image: people/active_members/yongboC.jpg
-    position: Staff
-    image_circular: true # crops the image to make it circular
-    personal_web:
-    email: Yongbo.Chen@anu.edu.au
-    more_info: >
-      <p>Research Fellow<br>
-      School of Computing<br>
-      Australian National University</p>
   - name: Edward Kim
     image: people/active_members/edwardK.jpg
     position: Staff
@@ -44,26 +34,6 @@ profiles:
       Australian National University</p>
   
   # HDR
-  - name: Nicholas Collins
-    image: people/active_members/nickC.jpg
-    position: Student
-    image_circular: false # crops the image to make it circular
-    personal_web:
-    email: Nicholas.Collins@anu.edu.au
-    more_info: >
-      <p>PhD candidate<br>
-      School of ITEE, UQ<br>
-      2018-now</p>
-  - name: Jonathon Schwartz
-    image: people/active_members/jonathonS.jpg
-    position: Student
-    image_circular: false # crops the image to make it circular
-    personal_web: https://comp.anu.edu.au/people/jonathon-schwartz/
-    email: Jonathon.Schwartz@anu.edu.au
-    more_info: >
-      <p>PhD candidate<br>
-      School of Computing, ANU<br>
-      2020-now</p>
   - name: Ivan Ang
     image: people/active_members/ivanA.jpg
     position: Student
@@ -106,6 +76,14 @@ profiles:
       2023-now</p>
   
   # Staff Alumni
+  - name: Yongbo Chen
+    image: people/active_members/yongboC.jpg
+    position: Staff alumni
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>position: Research Fellow<br>
+      location: School of Computing, ANU
+      </p>
   - name: Jimy Cai Huang 
     image: people/alumni/empty.jpg
     position: Staff alumni
@@ -144,6 +122,22 @@ profiles:
       current: Researcher at ACFR</p>
   
   # HDR ALUMNI
+  - name: Nicholas Collins
+    image: people/active_members/nickC.jpg
+    position: HDR alumni
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>PhD Graduate<br>
+      location: School of ITEE, UQ
+      </p>
+  - name: Jonathon Schwartz
+    image: people/active_members/jonathonS.jpg
+    position: HDR alumni
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>PhD Graduate<br>
+      location: School of Computing, ANU
+      </p>
   - name: Marcus Hoerger
     image: people/alumni/empty.jpg
     position: HDR alumni
