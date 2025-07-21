@@ -74,6 +74,16 @@ profiles:
       <p>PhD candidate<br>
       School of Computing, ANU<br>
       2023-now</p>
+  - name: Yuanchu (James) Liang
+    image: people/active_members/jamesLiang.jpg
+    position: Student
+    image_circular: false # crops the image to make it circular
+    personal_web: 
+    email: Yuanchu.Liang@anu.edu.au
+    more_info: >
+      <p>PhD candidate<br>
+      School of Computing, ANU<br>
+      2024-now</p>
   
   # Staff Alumni
   - name: Yongbo Chen
