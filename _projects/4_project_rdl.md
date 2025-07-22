@@ -3,7 +3,7 @@ layout: page
 title: Partially Observed Inventory Control
 description: 
 img: assets/img/project_img/inventory_control/thumb-inventory-control.png
-importance: 4
+importance: 5
 category: active
 do_not_show_post_desc: true
 ---

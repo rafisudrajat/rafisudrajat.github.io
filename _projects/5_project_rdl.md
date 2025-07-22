@@ -3,7 +3,7 @@ layout: page
 title: Incorporating Defender's Behaviour in Autonomous Pen-Testing
 description: 
 img: assets/img/project_img/pen_testing/thumb-pen-testing.png
-importance: 5
+importance: 6
 category: active
 do_not_show_post_desc: true
 ---
