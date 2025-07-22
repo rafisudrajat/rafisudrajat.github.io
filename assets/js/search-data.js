@@ -176,6 +176,11 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
+            },},{id: "projects-scaling-long-horizon-online-pomdp-planning-with-rapid-state-space-sampling",
+          title: 'Scaling Long-Horizon Online POMDP Planning with Rapid State Space Sampling',
+          description: "Analytically solving the reference-based POMDP bellman backup removes the need of neumerical optimisation during planning, and enables seemless integration of state space sampling and belief space sampling to solve long horizon POMDPs online.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project_rdl/";
             },},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
