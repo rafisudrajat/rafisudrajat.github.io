@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Incorporating Defender's Behaviour in Autonomous Pen-Testing
-description: 
+description: This project introduces D-PenTesting, a POMDP-based autonomous penetration tester that models defender behavior using a simplified "information decay factor," allowing it to handle all three key uncertainties: partial observability, unreliable actions, and active defense. To address situations where the defender’s behavior is unknown, LD-PenTesting uses Bayesian Reinforcement Learning to learn the appropriate decay factor during the attack process. Experimental results show that LD-PenTesting performs nearly as well as D-PenTesting with a known decay factor, making it a practical solution for real-world autonomous pen-testing.
 img: assets/img/project_img/pen_testing/thumb-pen-testing.png
-importance: 6
+importance: 5
 category: active
 do_not_show_post_desc: true
 ---

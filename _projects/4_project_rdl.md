@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Partially Observed Inventory Control
-description: 
+description: POMDP for inventory control
 img: assets/img/project_img/inventory_control/thumb-inventory-control.png
-importance: 5
+importance: 4
 category: active
 do_not_show_post_desc: true
 ---

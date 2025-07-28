@@ -3,7 +3,7 @@ layout: page
 title: Scaling Long-Horizon Online POMDP Planning with Rapid State Space Sampling 
 description: Analytically solving the reference-based POMDP bellman backup removes the need of neumerical optimisation during planning, and enables seemless integration of state space sampling and belief space sampling to solve long horizon POMDPs online.
 img: assets/img/project_img/ropras/ROPRaS_thumbnail.png
-importance: 2
+importance: 6
 category: active
 do_not_show_post_desc: true
 ---

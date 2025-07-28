@@ -3,7 +3,7 @@ layout: page
 title: On-line POMDP Planning Toolkit (OPPT)
 description: In this project, we develop On-line POMDP Planning Toolkit (OPPT) that allows users to specify POMDP model of motion planing problems via a configuration file and 3D models of the robot and environment.
 img: assets/img/project_img/oppt/thumb-oppt.png
-importance: 4
+importance: 3
 category: active
 do_not_show_post_desc: true
 ---
