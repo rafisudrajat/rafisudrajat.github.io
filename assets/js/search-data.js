@@ -158,7 +158,7 @@ ninja.data = [{
               window.location.href = "/projects/4_project/";
             },},{id: "projects-partially-observed-inventory-control",
           title: 'Partially Observed Inventory Control',
-          description: "",
+          description: "POMDP for inventory control",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project_rdl/";
             },},{id: "projects-project-5",
@@ -166,8 +166,8 @@ ninja.data = [{
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-incorporating-defender-39-s-behaviour-in-autonomous-pen-testing",
-          title: 'Incorporating Defender&amp;#39;s Behaviour in Autonomous Pen-Testing',
+            },},{id: "projects-",
+          title: '',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project_rdl/";
@@ -206,6 +206,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-adaptive-discretization-using-voronoi-trees-for-continuous-pomdps",
+          title: 'Adaptive Discretization using Voronoi Trees for Continuous POMDPs',
+          description: "ADVT is a Monte Carlo Tree Search-based POMDP solver that uses Voronoi Trees to adaptively discretize high-dimensional continuous action spaces for more efficient planning. It outperforms existing methods by focusing exploration on promising regions and effectively handling continuous observations using progressive widening.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project_rdl/";
             },},{
         id: 'social-email',
         title: 'email',
