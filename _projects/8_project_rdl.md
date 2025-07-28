@@ -3,7 +3,7 @@ layout: page
 title: Inspection Planning Primitives with Implicit Models 
 description: A memory-efficient inspection planning framework that replace all planning primitives with implicit environment models.
 img: assets/img/project_img/ipim/3h.png
-importance: 3
+importance: 1
 category: active
 do_not_show_post_desc: true
 ---
@@ -26,11 +26,14 @@ The high memory requirements with inspection planning can be reduced using impli
 
 With <strong>IPIM</strong>, the known explicit environment model $\mathcal{E}$ is first converted into an implicit SDF model $f_{\mathcal{E}}$ represented by a neural network. Without the loss of generality, we suppose <strong>IPIM</strong> is used with a sampling-based inspection planner that builds a tree $\mathbb{T} = \{ \mathbb{N}, \mathbb{E}\}$, where $\mathbb{N}$ and $\mathbb{E}$ are the set of nodes and edges in the tree. Under <strong>IPIM</strong>, each node $\mathbf{n} \in \mathbb{N}$ represents a 4-tuple $\left\langle \mathbf{q}, \mathbf{B_{P_n}},  f_\mathbf{P_n}, \textbf{cov($\mathbf{n}$)}\right\rangle$. The four elements in the tuple reflect how <strong>IPIM</strong> converts the four primitives of the planner to their implicit forms, namely:
 
-- <strong>Collision Check:</strong> $\mathbf{q} \in C_{free}$ refers to a sampled robot's configuration at node $\mathbf{n}$. Denote its parent node as $\mathbf{n}' \in \mathbb{N}$. The collision check against trajectory $\overline{\mathbf{n}'\mathbf{n}}$ is done with the implicit model $f_{\mathcal{E}}$. 
-- <strong>Observation Simulation:</strong> The observation $\mathbf{P_n}$ (e.g., a depth image), is simulated using the SDF function $f_{\mathcal{E}}$. \textit{For brevity, in the following sections, when we say the bounding box of $\mathbf{P_n}$, we mean the bounding box of the point cloud corresponding to the observation} $\mathbf{P_n}$. <strong>IPIM</strong> maintains the bounding box of $\mathbf{P_n}$, denoted as $\mathbf{B_{P_n}}$.  
-- <strong>Observation Representation:</strong> The local SDF $f_\mathbf{P_n}$ encodes $\mathbf{P_n}$ with a tiny-sized multi-layer perceptron. The set of local surface points, denoted as $S_\mathbf{P_n}$, can then be \textit{generated} from $\mathbf{B_{P_n}}$ and $f_\mathbf{P_n}$ with marching cube. 
-- <strong>Total Coverage Check:</strong> <strong>cov</strong>($\mathbf{n}$) refers to the accumulated coverage in the path from the root of $\mathbb{T}$ until the node $\mathbf{n}$ of $\mathbb{T}$. This coverage is calculated incrementally and implicitly as $\mathbb{T}$ being expanded. 
 
+- <strong>Collision Check:</strong> $\mathbf{q} \in C_{free}$ refers to a sampled robot's configuration at node $\mathbf{n}$. Denote its parent node as $\mathbf{n}' \in \mathbb{N}$. The collision check against trajectory $\overline{\mathbf{n}'\mathbf{n}}$ is done with the implicit model $f_{\mathcal{E}}$.
+   
+- <strong>Observation Simulation:</strong> The observation $\mathbf{P_n}$ (e.g., a depth image), is simulated using the SDF function $f_{\mathcal{E}}$. \textit{For brevity, in the following sections, when we say the bounding box of $\mathbf{P_n}$, we mean the bounding box of the point cloud corresponding to the observation} $\mathbf{P_n}$. <strong>IPIM</strong> maintains the bounding box of $\mathbf{P_n}$, denoted as $\mathbf{B_{P_n}}$.  
+  
+- <strong>Observation Representation:</strong> The local SDF $f_\mathbf{P_n}$ encodes $\mathbf{P_n}$ with a tiny-sized multi-layer perceptron. The set of local surface points, denoted as $S_\mathbf{P_n}$, can then be <strong>generated</strong> from $\mathbf{B_{P_n}}$ and $f_\mathbf{P_n}$ with marching cube. 
+  
+- <strong>Total Coverage Check:</strong> <strong>cov</strong>($\mathbf{n}$) refers to the accumulated coverage in the path from the root of $\mathbb{T}$ until the node $\mathbf{n}$ of $\mathbb{T}$. This coverage is calculated incrementally and implicitly as $\mathbb{T}$ being expanded. 
 </p>
 
 
@@ -43,25 +46,31 @@ The scenarios are briefly introduced below.
 
 <div class="row">
   <div class="col-md-4">
-    {% include figure.liquid
-       loading="eager"
-       path="assets/img/project_img/ipim/bridge.png"
-       title="scenario1"
-       class="img-fluid rounded z-depth-1" %}
+    <div class="ratio ratio-4x3">
+        {% include figure.liquid
+        loading="eager"
+        path="assets/img/project_img/ipim/bridge.png"
+        title="scenario1"
+        class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
   <div class="col-md-4">
-    {% include figure.liquid
-       loading="eager"
-       path="assets/img/project_img/ipim/plant.png"
-       title="scenario2"
-       class="img-fluid rounded z-depth-1" %}
+    <div class="ratio ratio-4x3">
+        {% include figure.liquid
+        loading="eager"
+        path="assets/img/project_img/ipim/plant.png"
+        title="scenario2"
+        class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
   <div class="col-md-4">
-    {% include figure.liquid
-       loading="eager"
-       path="assets/img/project_img/ipim/plant_full.png"
-       title="scenario3"
-       class="img-fluid rounded z-depth-1" %}
+    <div class="ratio ratio-4x3">
+        {% include figure.liquid
+        loading="eager"
+        path="assets/img/project_img/ipim/plant_full.png"
+        title="scenario3"
+        class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
 </div>
 <div class="caption">
