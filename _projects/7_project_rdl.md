@@ -2,7 +2,7 @@
 layout: page
 title: Approximate POMDP Solving without Numerical Optimisation (NeurIPS + IJCAI)
 description: POMDP solver approximation
-img: assets/img/project_img/analytical/analytical.png
+img: assets/img/project_img/analytical/deep.png
 importance: 7
 category: active
 do_not_show_post_desc: true
