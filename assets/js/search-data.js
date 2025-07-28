@@ -186,16 +186,16 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-approximate-pomdp-solving-without-numerical-optimisation-neurips-ijcai",
-          title: 'Approximate POMDP Solving without Numerical Optimisation (NeurIPS + IJCAI)',
-          description: "approx pomdp solving",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project_rdl/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-inspection-planning-primitives-with-implicit-models",
+          title: 'Inspection Planning Primitives with Implicit Models',
+          description: "A memory-efficient inspection planning framework that replace all planning primitives with implicit environment models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project_rdl/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
