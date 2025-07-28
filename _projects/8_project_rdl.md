@@ -3,7 +3,7 @@ layout: page
 title: Inspection Planning Primitives with Implicit Models 
 description: A memory-efficient inspection planning framework that replace all planning primitives with implicit environment models.
 img: assets/img/project_img/ipim/3h.png
-importance: 1
+importance: 3
 category: active
 do_not_show_post_desc: true
 ---
@@ -92,9 +92,7 @@ Finally, we demonstrate a sample inspection trajectory planned for three hours i
 <h2> References </h2>
 
 <div class="publications">
-   {% bibliography --file project_7.bib %}
+   {% bibliography --file project_8.bib %}
 </div>
-
-
 
 
